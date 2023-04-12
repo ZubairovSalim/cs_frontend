@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es2015",
+//    "module": "commonjs",
+    "module": "es2015", // needed "type": "module" in package.json and use .js extensions in .ts imports
+    "moduleResolution": "Node",
+    "paths": {
+      "*": ["./src/*"],
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
